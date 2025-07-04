@@ -8,7 +8,6 @@
                     <h3 class="text-center">Información</h3>
 
 
-
                     <!-- Datos del estudiante -->
                     <div class="input-group-sm mb-2">
                         <input type="text" class="form-control" placeholder="Nombres" id="nombres_Estudiante" name="nombres_Estudiante">
@@ -88,7 +87,7 @@
                         <input type="text" class="form-control" placeholder="EPS" id="EPS" name="EPS">
                     </div>
                     <div class="input-group-sm mb-2">
-                        <input type="text" class="form-control" placeholder="Discapasidad" id="discapasidad" name="discapasidad">
+                        <input type="text" class="form-control" placeholder="Discapacidad" id="discapacidad" name="discapacidad">
                     </div>
 
 
@@ -160,13 +159,13 @@
 
                     <div class="input-group-sm mb-3">
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="Repitente" id="si">
+                            <input class="form-check-input" type="radio" name="repitente" id="si">
                             <label class="form-check-label" for="si">
                                 Si
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="Repitente" id="no">
+                            <input class="form-check-input" type="radio" name="repitente" id="no">
                             <label class="form-check-label" for="no">
                                 No
                             </label>
