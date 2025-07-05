@@ -4,7 +4,7 @@
         <div class="row justify-content-center">
 
             <div class="col-md-3">
-                <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="shadow p-3 mb-5 bg-body-tertiary rounded w-100">
                     <h3 class="text-center">Información</h3>
 
 
@@ -67,7 +67,7 @@
 
 
             <div class="col-md-3">
-                <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="shadow p-3 mb-5 bg-body-tertiary rounded w-100">
                     <div class="input-group-sm mb-2">
                         <input type="text" class="form-control" placeholder="Barrio" id="barrio" name="barrio">
                     </div>
@@ -111,7 +111,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="shadow p-3 mb-5 bg-body-tertiary rounded w-100">
                     <div class="input-group-sm mb-3">
                         <input type="text" class="form-control" placeholder="Numero de Documento" id="n_Documento_Asistente" name="n_Documento_Asistente">
                     </div>
@@ -158,7 +158,7 @@
                     </div>
 
                     <div class="input-group-sm mb-3">
-                        <div class="form-check form-check-inline">
+                        <div class="form-check form-check-inline w-100">
                             <input class="form-check-input" type="radio" name="repitente" id="si">
                             <label class="form-check-label" for="si">
                                 Si
@@ -191,19 +191,25 @@
                     </div>
                 </div>
             </div>
+                
+            </div>
             <div class="row d-md-flex justify-content-center">
+                   <div class="col-auto">
                 <?php
                 include 'backend/modelo/conexion.php';
                 include 'backend/controlador/agregar.php';
                 ?>
+                </div>
+                </div>
+                <div class="row d-md-flex justify-content-center">
                 <div class="col-auto">
                     <button type="button" class="btn btn-danger">cancelar</button>
                 </div>
                 <div class="col-auto">
                     <button type="submit" class="btn btn-success" name="btnRegistrar" value="ok">Guardar</button>
                 </div>
+                </div>
 
-            </div>
     </form>
 
 </div>

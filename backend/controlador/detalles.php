@@ -122,17 +122,17 @@ if (!empty($_POST["btnRegistrar"])) {
 
 
             if($sql_estudiante && $sql_asistente && $sql_matricula) {
-                
-                 echo '<div class="alert alert-success">Datos registrados correctamente.</div>';
                 $conexion->close();
+                
+                exit();
             } else {
                 echo '<div class="alert alert-danger">Error al registrar los datos.</div>';
-               $conexion->close();
+                exit();
             } 
             
         } catch (Exception $e) {
             echo '<div class="alert alert-danger">Error de conexión: ' . $e->getMessage() . $conexion->error . '</div>';
-           $conexion->close();
+            exit();
         }
     } else {
         echo '<div>Por favor, complete todos los campos.</div>';
